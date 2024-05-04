@@ -13,6 +13,10 @@ build:
   commands:
     - pip install -r requirements.txt
     - mkdocs build
+    - mkdir -p $READTHEDOCS_OUTPUT/html/  # Ensure HTML output directory exists
+    - pip install -r requirements.txt      # Install project dependencies
+    - mkdocs build --clean                 # Generate HTML documentation
+    - cp -r site/* $READTHEDOCS_OUTPUT/html/  # Copy generated HTML files to output directory
 
 
 mkdocs:
