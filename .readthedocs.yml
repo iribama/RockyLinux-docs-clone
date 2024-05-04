@@ -1,0 +1,19 @@
+# Read the Docs configuration file for MkDocs projects
+# See https://docs.readthedocs.io/en/stable/config-file/v2.html for details
+
+# Required
+version: 2
+
+# Set the version of Python and other tools you might need
+build:
+  os: ubuntu-20.04  # Ubuntu 22.04 might not be available yet, 20.04 is a safe choice
+  python: 3.8  # A more common and stable version
+  nodejs: 20.x
+
+mkdocs:
+  configuration: mkdocs.yml
+
+# Optionally declare the Python requirements required to build your docs
+python:
+  install:
+    - requirements: requirements.txt  # Adjust the path depending on your project structure
