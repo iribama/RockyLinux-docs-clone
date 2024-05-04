@@ -11,6 +11,7 @@ build:
     - python
     - pip
   python: 3.8  # A more common and stable version
+  pip: latest
   commands:
     - pip install -r requirements.txt
     - mkdocs build
