@@ -12,6 +12,7 @@ theme:
     - content.tabs.link
     - content.code.annotation
     - code.content.copy
+    - github-corner
   language: en
   palette:
     - scheme: default
@@ -24,6 +25,14 @@ theme:
         - admonition
         - pymdownx.details
         - pymdownx.superfences
+        - pymdownx.arithmatex
+        - pymdownx.betterem
+        - pymdownx.details
+        - pymdownx.emoji
+        - pymdownx.inlinehilite
+        - pymdownx.magiclink
+        - pymdownx.tasklist
+        - pymdownx.tilde
     - scheme: slate
       toggle:
         icon: material/toggle-switch
