@@ -8,7 +8,7 @@ version: 2
 build:
   os: ubuntu-20.04  # Ubuntu 22.04 might not be available yet, 20.04 is a safe choice
   python: 3.8  # A more common and stable version
-  nodejs: 20.x
+  
 
 mkdocs:
   configuration: mkdocs.yml
