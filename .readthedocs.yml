@@ -7,8 +7,13 @@ version: 2
 # Set the version of Python and other tools you might need
 build:
   os: ubuntu-20.04  # Ubuntu 22.04 might not be available yet, 20.04 is a safe choice
+  tools: 
+    - python
+    - pip
   python: 3.8  # A more common and stable version
-  
+  commands:
+    - pip install -r requirements.txt
+    - mkdocs build
 
 mkdocs:
   configuration: mkdocs.yml
